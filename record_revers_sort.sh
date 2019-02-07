@@ -28,3 +28,5 @@ sort_records 'BAA10\nAAA20\nBAA30\nAAA40\nBAA50\nAAA60\nBAA70\nAAA80\nBAA90' "AA
 echo -e '\n\n'
 sort_records 'AAA10\nBAA20\nBAA30\nAAA40\nBAA50\nAAA60\nBAA70\nAAA80\nBAA90' "AAA"
 
+seq 20 | sed -re '/^11$/ i
+' | busybox awk 'BEGIN{ RS = "\n"; FS = "\n"; } { lifo[NR]=$0; lno=NR } END{ for(;lno>-1;lno--){ print lifo[lno]; }}'
