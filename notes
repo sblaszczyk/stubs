@@ -1,0 +1,2 @@
+Avoid inspecting large working trees' modification times (https://github.com/msysgit/msysgit/wiki/Diagnosing-why-Git-is-so-slow)
+git config core.ignoreStat true
