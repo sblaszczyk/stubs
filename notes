@@ -5,3 +5,6 @@ git config core.ignoreStat true
 
 Async refresh PS1
 https://unix.stackexchange.com/questions/25205/populate-ps1-asynchronously
+
+Plugins zsh
+https://github.com/unixorn/awesome-zsh-plugins
